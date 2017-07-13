@@ -1,0 +1,111 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+ }
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+a { color: inherit; } 
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section,img {
+    top: 0;
+  }
+  img {
+    position: absolute;
+    top: 10%;
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+article#main-col {
+  float: left;
+  width: 60%;
+}
+ul:not(.browser-default) li {
+    list-style-type: none;
+  }
+aside{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+div.col.s12 {
+  margin-left: 10px;
+}
+
+.pagination {
+  text-align: center;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+footer div#connect {
+  float: right;
+}
