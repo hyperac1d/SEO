@@ -17,6 +17,14 @@ app.get('/search-engine-marketing', function(req, res){
 app.get('/on-page-and-off-page-techniques', function(req, res){
   res.sendFile(path.join(__dirname, 'views/on-off-page.html'));
 });
+app.get('/mobile-responsive-tools', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/mobile-responsive.html'));
+});
+
+app.get('/hyperlinking-backlinking', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/backlinking.html'));
+});
+
 // app.get('*', function(req, res){
 //   res.sendFile(path.join(__dirname, 'views/404.html'));
 // });

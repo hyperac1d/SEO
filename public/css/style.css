@@ -11,6 +11,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+  background-color: #e8f5e9;
  }
 
 nav ul a,
@@ -50,28 +51,21 @@ a { color: inherit; }
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
+
 
 @media only screen and (max-width : 600px) {
   #index-banner .section,img {
     top: 0;
   }
   img {
-    position: absolute;
+    position: relative;
     top: 10%;
     float:none;
     text-align:center;
     width:100%;
   }
 }
+
 
 
 .icon-block {
@@ -98,6 +92,8 @@ div.col.s12 {
   margin-left: 10px;
 }
 
+
+
 .pagination {
   text-align: center;
 }
@@ -108,4 +104,19 @@ footer.page-footer {
 
 footer div#connect {
   float: right;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  img {
+    position: relative;
+    height: auto;
+    width: auto;
+  }
 }
