@@ -15,21 +15,57 @@
   	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-	<nav class="white" role="navigation">
-	    <div class="nav-wrapper container">
-	      <a id="logo-container" href="#" class="brand-logo">Mat Whiz</a>
-	      <ul class="right hide-on-med-and-down">
-	        <li><a href="/">Home</a></li>
-	        <li><a href="#">About</a></li>
-	      </ul>
+	<!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">Search Engine Optimization</a></li>
+    <li><a href="#!">Search Engine Marketing</a></li>
+    <li><a href="#!">On Page and Off Page Techniques</a></li>
+    <li><a href="#1">Mobile Responsive Tools</a></li>
+    <li><a href="#1">URL Canonicalization, etc..</a></li>
+    <li class="divider"></li>
+  </ul>
 
-	      <ul id="nav-mobile" class="side-nav">
-	        <li><a href="/">Home</a></li>
-	        <li><a href="#">About</a></li>
-	      </ul>
-	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-	    </div>
-  	</nav>
+  <!-- Dropdown Structure -->
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!">Search Engine Optimization</a></li>
+    <li><a href="#!">Search Engine Marketing</a></li>
+    <li><a href="#!">On Page and Off Page Techniques</a></li>
+    <li><a href="#1">Mobile Responsive Tools</a></li>
+    <li><a href="#1">URL Canonicalization, etc..</a></li>
+    <li class="divider"></li>
+  </ul>
+  
+  <nav class="teal lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Mat Whiz</a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="/">Home</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <!-- <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="images/office.jpg">
+            </div>
+            <img class="circle" src="images/yuna.jpg">
+            <a href="#!name"><span class="white-text name">Marco Mat</span></a>
+            <span class="white-text email">jdandturk@gmail.com</span>
+          </div>
+        </li> -->
+        <li><a href="/">Home</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      
+    </div>
+  </nav>
 
   <div id="index-banner" class="parallax-container">
     <div class="parallax"><img src="img/banner-backlink.jpg" alt="Search Engine Optimization"></div>
@@ -37,11 +73,11 @@
 
   <nav>
     <div class="nav-wrapper teal">
-      <div class="col s12">
+      <div class="navi col s12">
         <a href="/" class="breadcrumb">Home</a>
         <a href="#main-col" class="breadcrumb">Search Engine Optimization</a>
         <a href="#main-col" class="breadcrumb">Search Engine Marketing</a>
-        <a href="#main-col" class="breadcrumb">On Page and Off Page Techniques</a>
+        <a href="#main-col" class="breadcrumb active">On Page and Off Page Techniques</a>
       </div>
     </div>
   </nav>
@@ -80,7 +116,7 @@
   <div class="grey-bg">
   	<div class="container">
   		<article>
-  			<h5 class="brown-text">On-page SEO's important HTML elements</h5>
+  			<h5 class="brown-text">On-page SEO's important HTML elements</h5><br>
   			<h6><strong><i>Title Tags Strategy</i></strong></h6>
         	<p>Title labels are essentially precisely what they seem like — the title of the page. As a title, this tag ought to be utilized to portray what a client can hope to discover on a specific page.</p><br>
 
@@ -88,13 +124,13 @@
         	<p>Meta labels still assume an imperative part in SEO. On the off chance that you write any catchphrase into an internet searcher, you'll perceive how that watchword is reflected in the title for that page.</p><br>
 
         	<h6><strong><i>Image</i></strong></h6>
-        	<p>Image tag use to represents an image in the document. Alt attributes defines the alternative text describing the image. Users will see this text displayed if the image URL is wrong, the image is not in one of the supported formats, or if the image is not yet downloaded.</p>
+        	<p>Image tag use to represents an image in the document. Alt attributes defines the alternative text describing the image. Users will see this text displayed if the image URL is wrong, the image is not in one of the supported formats, or if the image is not yet downloaded.</p><br>
 
         	<h6><strong><i>Text Link</i></strong></h6>
-        	<p>The text link specifies the link's destination. This helps the user to have another description of the specified word that has a separate discussion.</p>
+        	<p>The text link specifies the link's destination. This helps the user to have another description of the specified word that has a separate discussion.</p><br>
 
         	<h6><strong><i>NoFollowed Link</i></strong></h6>
-        	<p>A no take after connection is a connection that does not include as a point the page's support, does not support PageRank, and doesn't help a page's situation in the SERPs. No take after connections get no adoration. Theirs is a pitiful and forlorn life.</p>
+        	<p>A no take after connection is a connection that does not include as a point the page's support, does not support PageRank, and doesn't help a page's situation in the SERPs. No take after connections get no adoration. Theirs is a pitiful and forlorn life.</p><br>
 
         	<h6><strong><i>Image Link</i></strong></h6>
         	<p>Image links are images that are clickable in which it will redirect you to other page or redirect you to a certain section in the same page.</p>
