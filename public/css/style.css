@@ -85,6 +85,8 @@ div.col.s12 {
 .comment-section {
   margin-top: 10px;
   background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #btn-submit {
