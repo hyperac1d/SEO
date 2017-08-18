@@ -120,6 +120,75 @@
     </div>
   </section>
 
+  <!-- COMMENT SECTION -->
+  <div class="comment-section">
+    <div class="container"><br><br>
+      <h4>Comment down below!</h4>
+      <div class="comment-box">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="comment" class="materialize-textarea"></textarea>
+              <label for="comment">Comment here!</label>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light col s12" type="submit" onclick="insertComment()" id="btn-submit"><a href="#!"></a>Submit</button><br><br><br><br>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h4>COMMENTS:</h4><br>
+      <div id="sem-comment">
+      </div>
+    </div>
+  </div>
+
+<script>
+      let json_feedback = [];
+
+      try{
+          let tmp_accounts = JSON.parse(localStorage.getItem("json_feedback"));
+
+          tmp_accounts.map((account)=>{
+              console.log(account);
+              json_feedback.push(account);
+          });
+       
+      }
+      catch(TypeError){
+          localStorage.setItem('json_feedback',JSON.stringify(json_feedback));
+      }
+
+
+      function insertComment(){
+          let username = document.querySelector('#comment').value;
+          let newName = {
+              comment: username
+          }
+          json_feedback.push(newName);
+          let jns = JSON.stringify(json_feedback)
+          localStorage.setItem('json_feedback', jns)
+          let jns_retrive = JSON.parse(localStorage.getItem('json_feedback'))
+          // localStorage.setItem('json_names',JSON.stringify(json_names));
+      }
+
+      let jns_parse = JSON.parse(localStorage.getItem('json_feedback'));
+      console.log(jns_parse);
+      let html=``;
+      jns_parse.map((name)=>{
+  
+      html += `
+      <div class="blue-grey lighten-5"> 
+        <p>${name.comment}</p>
+      </div>
+      
+      
+      `;
+      });
+      document.querySelector('#sem-comment').innerHTML = html;
+</script>
+
 
 
   <ul class="pagination">
@@ -162,5 +231,6 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/comment.js"></script>
 </body>
 </html>

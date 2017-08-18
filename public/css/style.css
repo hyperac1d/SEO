@@ -81,6 +81,16 @@ div.col.s12 {
   margin-left: 10px;
 }
 
+/* comment section */
+.comment-section {
+  margin-top: 10px;
+  background-color: white;
+}
+
+#btn-submit {
+  float: right;
+}
+
 
 /* Bottom Part*/
 .pagination {
